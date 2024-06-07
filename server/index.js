@@ -15,11 +15,12 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// // Middleware
+// Middleware
 // app.use(cors());
 app.use(cors({
-    origin: 'https://tictactoe-o9r7lh6dd-ravins-projects-8297302d.vercel.app'
+    origin: 'https://tictactoe-eight-smoky.vercel.app'
   }));
+  
 app.use(bodyParser.json());
 
 // MongoDB connection
